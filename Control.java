@@ -30,9 +30,13 @@ public class Control {
         ins.volumenDown(1, tv);
     }
     
-    public void enlazar(TV tv, Control control){
+    public void enlazar(TV tv){
         this.tv = tv;
-        tv.control=control;
+        
+    }
+    
+    public void setCanal(int canal){
+        ins.setCanal(canal);
     }
     
     public void setTv(TV tv){
