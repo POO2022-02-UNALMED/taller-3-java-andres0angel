@@ -1,4 +1,4 @@
-package televisores;
+package taller3.televisores;
 
 public class TV {
     //marca (Marca), canal(int), precio(int), estado(boolean), volumen(int) y control (Control).
@@ -58,8 +58,9 @@ public class TV {
     }
     
     public void contadorTV(TV tv){
-        if (tv.marca == this.marca && tv.canal == this.canal && tv.precio==this.precio && tv.estado==this.estado
-        && tv.volumen == this.volumen && tv.control==this.control){
+        /*tv.marca == this.marca && tv.canal == this.canal && tv.precio==this.precio && tv.estado==this.estado
+        && tv.volumen == this.volumen && tv.control==this.control*/
+        if (tv == this){
             numTV += 1;
         }
     }

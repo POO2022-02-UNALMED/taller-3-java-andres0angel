@@ -1,4 +1,4 @@
-package televisores;
+package taller3.televisores;
 
 public class Control {
     TV tv;
@@ -36,7 +36,7 @@ public class Control {
     }
     
     public void setCanal(int canal){
-        ins.setCanal(canal);
+        tv.setControl(this);
     }
     
     public void setTv(TV tv){
