@@ -83,28 +83,28 @@ public class TV {
     }
     
     //canal 1 al canal 120 y para cambiar de canal necesariamente debe estar encendido el televisor
-    public void canalUp(int canal, TV tv){
+    public void canalUp(TV tv){
         boolean x = tv.getEstado();
         if (this.canal<=120 && this.canal>=1 && x==true){
             this.canal += 1;
         }    
     }   
     
-    public void canalDown(int canal, TV tv){
+    public void canalDown( TV tv){
         boolean x = tv.getEstado();
         if (this.canal<=120 && this.canal>=1 && x==true){
             this.canal -= 1;
         }
     }
     
-    public void volumenUp(int volumen, TV tv){
+    public void volumenUp( TV tv){
         boolean x = tv.getEstado();
         if(this.volumen>=0 && this.volumen<=0 && x==true){
             this.volumen+=1;
         }
     }
     
-    public void volumenDown(int volumen, TV tv){
+    public void volumenDown(TV tv){
         boolean x = tv.getEstado();
         if(this.volumen>=0 && this.volumen<=0 && x==true){
             this.volumen-=1;
